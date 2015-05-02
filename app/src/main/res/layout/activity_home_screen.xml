@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background"
+                tools:context=".HomeScreen"
+                android:id="@+id/header">
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="Create a Game"
+        android:id="@+id/createButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="#ff009eff"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"
+        android:onClick="toCreate"
+        android:nestedScrollingEnabled="true"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="Explore for Games"
+        android:id="@+id/exploreButton"
+        android:layout_below="@+id/createButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="#FF009EFF"
+        android:textSize="20dp"
+        android:textColor="#ffffffff"
+        android:singleLine="false"
+        android:onClick="toExplore"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click a button to get started:"
+        android:id="@+id/message"
+        android:layout_above="@+id/exploreButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="113dp"/>
+
+</RelativeLayout>

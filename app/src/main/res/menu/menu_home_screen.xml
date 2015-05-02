@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".HomeScreen">
+    <item android:id="@+id/menu_newitem"
+          android:title="@string/newitem"
+          android:icon="@android:drawable/ic_menu_add"
+          app:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/menu_blue"
+          android:title="@string/blueitem"
+          android:orderInCategory="1"
+          app:showAsAction="never"/>
+    <item android:id="@+id/menu_red"
+          android:title="@string/reditem"
+          android:orderInCategory="2"
+          app:showAsAction="never"/>
+
+</menu>
